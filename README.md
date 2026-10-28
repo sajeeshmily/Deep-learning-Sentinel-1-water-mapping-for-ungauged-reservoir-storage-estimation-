@@ -13,7 +13,7 @@ on Poondi, Cholavaram, Red Hills (Puzhal) and Chembarambakkam.
 | Earth Engine export (baseline areas, DEM, CHIRPS, ERA5-Land; image stacks) | `gee/01_export_reservoir_data_colab.py` | Phase 1 (tables) **run**; Phase 2 (stacks) ready. The `.js` version is the older Code Editor variant and lacks the fixes below |
 | Satellite area vs gauge storage; ungauged rating curves (E-SAT) | `src/satellite_validation.py` | **Run on real Earth Engine exports** (2017–2020). Results in `outputs/satellite/` |
 | Forecasting driven by real satellite storage (E5) | `src/satellite_forecast.py` | **Run on real data** (test 2019–2020) |
-| U-Net training + segmentation evaluation (Sen1Floods11) | `src/train_unet_sen1floods11.py`, `kaggle_unet_run.ipynb` | **Run on Kaggle** (4 configs x seeds 0,1). Results in `outputs/seg/` (`segmentation_summary.csv`, `F7_cloud_robustness.png`). Weights: `models/` (seed 0; not included in the zip, keep your own copy of `unet_weights_s0.zip`) |
+| U-Net training + segmentation evaluation (Sen1Floods11) | `src/train_unet_sen1floods11.py`, `kaggle_unet_run.ipynb` | **Run on Kaggle** (4 configs x seeds 0,1). Results in `outputs/seg/` (`segmentation_summary.csv`, `F7_cloud_robustness.png`). Weights: `models/`
 | Area time series from the trained U-Nets | `src/area_timeseries.py` | Runs S2-only, S1-only and fused models on every reservoir scene; scene logic tested with a stub model. Needs the Phase 2 stacks + weights (run on Kaggle/Colab) |
 | Area → storage (gauged rating, regional leave-one-out, DEM hypsometry) | `src/area_to_storage.py` | Code tested on synthetic inputs only; run it on your real satellite areas |
 
