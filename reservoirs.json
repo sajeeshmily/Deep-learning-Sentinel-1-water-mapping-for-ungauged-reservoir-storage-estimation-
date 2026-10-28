@@ -1,0 +1,7 @@
+{
+  "_note": "capacity = full reservoir level storage in the SAME unit as the gauge data (mcft for the Kaggle Chennai dataset). Values below are the commonly published design capacities; VERIFY against Tamil Nadu WRD / CMWSSB before publishing. max_area_km2: set from the JRC max-extent mask exported by GEE (null = use largest observed satellite area). unit_to_mcm: 1 mcft = 0.0283168 MCM.",
+  "POONDI":          {"capacity": 3231, "max_area_km2": null, "unit_to_mcm": 0.0283168},
+  "CHOLAVARAM":      {"capacity": 881, "max_area_km2": null, "unit_to_mcm": 0.0283168},
+  "REDHILLS":        {"capacity": 3300, "max_area_km2": null, "unit_to_mcm": 0.0283168},
+  "CHEMBARAMBAKKAM": {"capacity": 3645, "max_area_km2": null, "unit_to_mcm": 0.0283168}
+}

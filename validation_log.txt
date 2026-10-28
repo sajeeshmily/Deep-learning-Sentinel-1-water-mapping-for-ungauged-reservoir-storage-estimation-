@@ -1,0 +1,28 @@
+QC: replaced 30 spike values
+{"POONDI": {"s2_full_tiles": ["T44PLV"], "s1_track": 92}, "CHOLAVARAM": {"s2_full_tiles": ["T44PLV", "T44PMV"], "s1_track": 92}, "REDHILLS": {"s2_full_tiles": ["T44PMV"], "s1_track": 92}, "CHEMBARAMBAKKAM": {"s2_full_tiles": ["T44PLV"], "s1_track": 92}}
+sensor       reservoir   n  pearson_r  spearman_rho  gauged_RMSE  gauged_NSE  gauged_KGE  LORO_RMSE  LORO_NSE  LORO_KGE  LORO_PBIAS_%
+    S2          POONDI  57      0.984         0.970        0.025       0.982       0.989      0.062     0.892     0.817        -3.425
+    S2      CHOLAVARAM  53      0.736         0.927        0.077       0.398       0.470      0.171    -1.980    -0.901       169.698
+    S2        REDHILLS  42      0.961         0.986        0.058       0.972       0.979      0.140     0.835     0.606       -22.582
+    S2 CHEMBARAMBAKKAM  47      0.702         0.796        0.195       0.358       0.543      0.177     0.471     0.616        30.522
+    S1          POONDI 123      0.001        -0.041        0.219      -0.240      -0.676      0.240    -0.489    -0.128         2.459
+    S1      CHOLAVARAM 123      0.256         0.237        0.170      -0.115      -0.285      0.229    -1.018    -0.645       138.517
+    S1        REDHILLS 123      0.586         0.594        0.303      -0.067       0.148      0.296    -0.019    -0.037       -28.567
+    S1 CHEMBARAMBAKKAM 123      0.300         0.204        0.258      -0.347      -0.347      0.228    -0.047    -0.103         3.890
+      reservoir sensor  n_dry  median_area_when_storage<5%cap_km2  as_%_of_max_area
+         POONDI     S2     20                                1.16              4.46
+         POONDI     S1     40                               19.83             58.99
+     CHOLAVARAM     S2     19                                0.25              4.35
+     CHOLAVARAM     S1     41                                4.71             62.72
+       REDHILLS     S2     12                                1.97             10.19
+       REDHILLS     S1     25                               13.89             69.40
+CHEMBARAMBAKKAM     S2     25                                5.80             32.28
+CHEMBARAMBAKKAM     S1     39                               14.05             60.38
+                      obs_per_month  max_gap_days
+sensor season                                    
+S1     Dry (Jan-May)            2.6          12.0
+       NE (Oct-Dec)             3.5          12.0
+       SW (Jun-Sep)             2.2          36.0
+S2     Dry (Jan-May)            2.5          36.2
+       NE (Oct-Dec)             0.9          65.0
+       SW (Jun-Sep)             1.5          71.2
