@@ -1,0 +1,27 @@
+{
+  "POONDI": {
+    "s2_full_tiles": [
+      "T44PLV"
+    ],
+    "s1_track": 92
+  },
+  "CHOLAVARAM": {
+    "s2_full_tiles": [
+      "T44PLV",
+      "T44PMV"
+    ],
+    "s1_track": 92
+  },
+  "REDHILLS": {
+    "s2_full_tiles": [
+      "T44PMV"
+    ],
+    "s1_track": 92
+  },
+  "CHEMBARAMBAKKAM": {
+    "s2_full_tiles": [
+      "T44PLV"
+    ],
+    "s1_track": 92
+  }
+}
