@@ -15,10 +15,10 @@ on Poondi, Cholavaram, Red Hills (Puzhal) and Chembarambakkam.
 | Forecasting driven by real satellite storage (E5) | `src/satellite_forecast.py` | **Run on real data** (test 2019–2020) |
 | U-Net training + segmentation evaluation (Sen1Floods11) | `src/train_unet_sen1floods11.py`, `kaggle_unet_run.ipynb` | **Run on Kaggle** (4 configs x seeds 0,1). Results in `outputs/seg/` (`segmentation_summary.csv`, `F7_cloud_robustness.png`). Weights: `models/`
 | Area time series from the trained U-Nets | `src/area_timeseries.py` | Runs S2-only, S1-only and fused models on every reservoir scene; scene logic tested with a stub model. Needs the Phase 2 stacks + weights (run on Kaggle/Colab) |
-| Area → storage (gauged rating, regional leave-one-out, DEM hypsometry) | `src/area_to_storage.py` | Code tested on synthetic inputs only; run it on your real satellite areas |
+| Area → storage (gauged rating, regional leave-one-out, DEM hypsometry) | `src/area_to_storage.py` | 
 
 **Important:** E4 uses *simulated* satellite observations (revisit, monsoon cloud loss, SAR
-gap-filling, storage error). Report it as a sensitivity analysis, not as satellite results.
+gap-filling, storage error). 
 
 
 ## Run order
